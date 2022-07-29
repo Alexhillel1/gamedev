@@ -1,0 +1,273 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+/* Стили для обнуления верхних отступов у элементов */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+/* Класс для обнуления базовых свойств у списков (ul) */
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  padding: 0;
+}
+/* Класс для обнуления базовых свойств у ссылок */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* Свойства для корректного отображения картинок */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/* Свойства для обнуления курсива у address */
+
+address {
+  font-style: normal;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180.96deg, #000000 0.82%, #4a2800 129.1%);
+  backdrop-filter: blur(14px);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header {
+  padding-top: 44px;
+  padding-bottom: 114px;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  margin-right: 36px;
+}
+.logo {
+  font-weight: 800;
+  font-size: 29px;
+  line-height: 153.5%;
+
+  color: #ffffff;
+  margin-right: auto;
+}
+.menu__list {
+  display: flex;
+  align-items: center;
+  column-gap: 88px;
+}
+
+.menu__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+
+  color: #ffffff;
+}
+.contact-us__btn {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.53;
+
+  color: #ffffff;
+  padding: 11px 28px;
+  background: #fa9021;
+  border-radius: 6px;
+  border: transparent;
+  cursor: pointer;
+}
+
+.hero__inner {
+  display: flex;
+}
+
+.hero__content {
+  width: 527px;
+}
+.hero__top-descr {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 155.2%;
+  /* identical to box height, or 31px */
+
+  color: #e87d0e;
+  margin-bottom: 17px;
+}
+.hero__title {
+  width: 479px;
+
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 155.2%;
+  /* or 78px */
+
+  color: #ffffff;
+  margin-bottom: 26px;
+}
+.hero__bottom-descr {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 200%;
+  /* or 32px */
+
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.hero__btn {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* identical to box height */
+
+  color: #ffffff;
+  padding: 15px 31px;
+  background: linear-gradient(92.48deg, #fa8305 2.08%, #fb9e3c 117.25%);
+  border-radius: 40px;
+}
+
+.hero__inner {
+  display: flex;
+}
+
+.hero__img {
+  width: 100%;
+  background-image: url(../img/Group1321.png);
+  background-repeat: no-repeat;
+}
+
+.joy_stick {
+  position: absolute;
+  top: 0;
+  right: 265px;
+}
+
+.card-filter {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.filter__card-btn {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 187.5%;
+  /* identical to box height, or 38px */
+
+  color: #ffffff;
+  padding: 10px 30px;
+  background: rgba(255, 255, 255, 0.11);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.trend__card {
+  padding-top: 178px;
+  padding-bottom: 64.5px;
+}
+
+.trend__title {
+  margin-bottom: 57px;
+  font-weight: 700;
+  font-size: 31px;
+  line-height: 187.5%;
+  /* or 58px */
+
+  color: #ffffff;
+}
+.trend__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.trend__item-img {
+  margin-bottom: 25px;
+}
+
+.trend__card-title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 187.5%;
+  /* or 41px */
+
+  color: #ffffff;
+  text-align: center;
+}
+
+.section__banner {
+  padding-top: 64.5px;
+  padding-bottom: 157px;
+}
+
+.section-title__banner {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 187.5%;
+  /* or 66px */
+
+  text-align: center;
+
+  color: #ffffff;
+  width: 826px;
+  margin: 0 auto;
+  margin-bottom: 67px;
+}
+.title__banner {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 187.5%;
+  /* or 56px */
+
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+.descr__banner {
+  width: 545px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 187.5%;
+  /* or 30px */
+
+  color: #ffffff;
+  margin-bottom: 46px;
+}
+.banner__img {
+  position: relative;
+}
+.banner__col {
+  position: absolute;
+  right: 200px;
+  top: -66px;
+  z-index: -1;
+}
+.banner__img-img {
+  z-index: 10;
+}
