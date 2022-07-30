@@ -168,6 +168,7 @@ body {
   position: absolute;
   top: 0;
   right: 265px;
+  z-index: -1;
 }
 
 .card-filter {
@@ -210,6 +211,44 @@ body {
 
 .trend__item-img {
   margin-bottom: 25px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-box {
+  position: relative;
+}
+
+.btn-heart {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #dc7000;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0s linear 0.3s,
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-svg-heart {
+  fill: currentColor;
+}
+
+.trend__item:hover .btn-heart {
+  opacity: 1;
+}
+
+.trend__item:hover .trend__item-img {
+  border: 1px solid #dc7000;
+  filter: drop-shadow(0px 4px 4px rgba(250, 144, 33, 0.25));
+  border-radius: 20px;
 }
 
 .trend__card-title {
